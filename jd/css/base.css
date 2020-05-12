@@ -45,7 +45,10 @@ blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,
     margin: 0;
     padding: 0;
 }
-
+input,button {
+    border: 0;
+    outline: none;  /* 取消轮廓边框 */
+}
 /*快速导航栏 begin*/
 .shortcut{
     height: 30px;
@@ -84,3 +87,46 @@ blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,
     padding: 3px;
 }
 /*快速导航栏 end*/
+/*中间头部分 start*/
+.middle{
+    height: 60px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    box-shadow: 0px -10px 10px rgba(0,0,0,.3);
+}
+.logo a{
+    display: block;
+    width: 190px;
+    height: 170px;
+    background: #fff url("../images/logo.png") no-repeat;
+}
+/*搜索框 start*/
+.form{
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+.form input {
+    width: 495px;
+    height: 33px;
+    border: 1px solid #f10215;
+    float: left;
+    font-size: 14px;
+    padding-left:3px;
+}
+.form button {
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    float: left;
+}
+/*搜索框 end*/
+
+/*中间大部分 end*/
+

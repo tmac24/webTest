@@ -1,0 +1,120 @@
+.grid {
+    height: 480px;
+}
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    background-color: #6e6568;
+    color: #fff;
+    font-size: 14px;  /* 不是给字的，给 /  */
+    position: relative;
+}
+.ad {
+    width: 250px;
+    height: 480px;
+    /* 	background-color: pink;
+     */	position: absolute;
+    top: 0;
+    left: -250px;
+}
+.ad-r {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    z-index: 999;
+    width: 0;
+    height: 480px;
+    background: url(../images/ad-r.jpg);
+    /* z这个盒子做动画，所以给它添加过渡 */
+    transition: all 0.8s;
+}
+.ad:hover .ad-r {
+    /* 鼠标经过 ad 这个广告大盒子的时候， 里面的这个叫 ad-r的盒子的宽度由0变为 990 */
+    width: 990px;
+}
+.grid-col1 a {
+    color: #fff;
+    font-size: 14px;  /* 是给链接文字  */
+    margin: 0 3px;
+}
+.grid-col1 a:hover {
+    color: #f10215;
+}
+.grid-col1 ul {
+    padding: 10px 0;
+}
+.grid-col1 ul li {
+    padding-left: 12px;
+    height: 29px;
+    line-height: 26px;
+    /* margin-left: 12px; 同学们体会下 这里为什么不用 margin  就是因为下面有鼠标经过的效果*/
+}
+.grid-col1 ul li:hover {
+    background-color: #9c9698;
+}
+
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+/* banner部分 */
+.grid-col2-b div {
+    float: left;
+    margin-top: 10px;
+}
+.grid-col2-b div:last-child {
+    float: right;
+    margin-top: 10px;
+}
+/* 箭头部分 */
+.grid-col2-t {
+    position: relative;
+}
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .6);
+    font-family: arial;
+    font-weight: normal;
+}
+.arrow-r {
+    right: 0;
+}
+.circle {
+    width: 167px;
+    height: 20px;
+    background: rgba(255, 255, 255, .3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.circle li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 4px;
+    cursor: pointer;  /* 鼠标经过li 的时候变成小手 */
+}
+.circle .current {
+    background-color: #f10215;
+}
+
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+}
+/* 右边模块 */
